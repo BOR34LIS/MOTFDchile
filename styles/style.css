@@ -1,76 +1,55 @@
-/* styles/style.css */
-
 body {
-  font-family: Arial, sans-serif; /* Establece la fuente para todo el cuerpo */
-  margin: 0; /* Elimina los márgenes predeterminados */
-  padding: 0; /* Elimina el relleno predeterminado */
-  background-image: url("../images/MOTFDbandphoto.jpg");
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/MOTFDbandphoto.jpeg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 }
-
-section {
-  display: flex; /* Establece la visualización de la sección como flexbox */
-}
-
-section > div {
-  flex: 1; /* Hace que cada div dentro de la sección ocupe el mismo espacio */
-  padding: 20px; /* Agrega espacio interno para separar los contenidos */
-
-}
-.logo-container {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  height: 100%; /* Ajusta la altura del contenedor para centrar la imagen */
+@media (max-width: 768px) {
+  .offcanvas {
+    background-image: url("../images/selftitledalbum.png") !important;
+    background-size: cover !important;
+  }
 }
 
 .logo {
-  max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
-  height: auto; /* Permite que la altura se ajuste automáticamente */
-  transition: transform 0.3s; /* Agrega una transición suave al hacer hover */
+  padding-top: 1rem;
+  max-width: 300px;
+  height: auto;
+  transition: transform 0.3s;
 }
 
 .logo:hover {
-  transform: scale(1.3); /* Aumenta el tamaño de la imagen al hacer hover */
+  transform: scale(1.3);
 }
-
-.rrss {
-  list-style-type: none;
-  padding: 0;
-  text-align: start;
-  padding-left: 4rem;
+.navbar-toggler {
+  border: white;
 }
-
-.rrss li {
+.navbar-nav li  {
   display: inline;
   margin-right: 10px;
-}
-
-.links {
-  list-style-type: none; /* Elimina los puntos de la lista */
-  padding: 0; /* Elimina el relleno predeterminado de la lista */
-  text-align: end;
-  padding-right: 4rem;
-}
-
-.links li {
-  display: inline; /* Hace que los elementos de la lista sean elementos en línea */
-  margin-right: 10px; /* Agrega espacio entre los elementos de la lista */
   font-family: "Six Caps", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: xx-large;
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
 }
-.six-caps-regular {
-  font-family: "Six Caps", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+footer h3 {
+  font-family: "Jost", sans-serif;
+  font-size: medium;
+  font-weight: 300;
+  margin-top: 10px;
 }
+footer {
 
-a {
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  color: white; /* Establece el color de texto de los enlaces */
+  height: 40px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #A50102;
+  color: white;
+  text-align: center;
 }
